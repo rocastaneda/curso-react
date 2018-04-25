@@ -22,7 +22,7 @@ class CallData extends Component {
 		super(props)
 
 		this.state = {
-
+			prueba: "uno"
 		}
 
 		this.onSubmit = this.onSubmit.bind(this)
@@ -71,6 +71,7 @@ class CallData extends Component {
 			</div>
 		)
 	}
+
 }
 
 const mapStateToProps = (state) => {

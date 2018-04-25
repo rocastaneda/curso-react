@@ -60,8 +60,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-Frontend/.env
-Frontend/.envTest
+#Frontend/.env
+#Frontend/.envTest
 
 # App Frontend and Backend
 archivos

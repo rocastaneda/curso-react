@@ -1,0 +1,9 @@
+export APP=CursoReact
+export NODE_ENV=production
+export LEVEL_LOG=DEBUG
+export BACKEND_SERVER=http://localhost:6001/
+export TIEMPO_SESION_INACTIVIDAD=900000
+export TIEMPO_SESION_ALERTA=120000
+
+export NEWRELIC_LICENSE_KEY=45
+
