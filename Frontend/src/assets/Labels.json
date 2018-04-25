@@ -1,0 +1,35 @@
+{
+	"continue": "Continuar",
+	"successMessage": "Acción realizada con éxito",
+	"errorMessage": "La acción no pudo completarse, vuelve a intentarlo",
+	"listMessage": "El elemento seleccionado ya se encuentra agregado",
+	"listMessageIn": "El elemento ingresado ya se encuentra agregado",
+	"save": "Guardar",
+	"search": "Buscar",
+	"exit": "Salir",
+	"accept": "Aceptar",
+	"update": "Guardar Cambio",
+	"cancel": "Cancelar",
+	"send": "Enviar",
+	"Login": {
+		"return": "Regresar al sitio",
+		"title": "Iniciar sesión",
+		"username": "Correo electrónico",
+		"password": "Contraseña",
+		"btnLogin": "Ingresar",
+		"btnForgotten": "Olvidé mi contraseña",
+		"title2": "¿Su organización no está registrada?",
+		"regInstitution": "Registrar a mi organización",
+		"regInstructionsTitle": "Mi organización está registrada, pero yo no",
+		"regPhone": "inversionsocial@montepiedad.com.mx"
+	},
+	"CallClient": {
+		"title": "Llamada Entrante",
+		"numberClient": "Número de cliente",
+		"nameOne": "Primer nombre",
+		"nameTwo": "Segundo nombre",
+		"lastNameOne": "Apellido paterno",
+		"lastNameTwo": "Apellido materno",
+		"phone": "Número telefónico"
+	}
+}
