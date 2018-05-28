@@ -2,14 +2,11 @@ import Labels from 'Assets/Labels'
 import React from 'react'
 import { Row, Col, Button } from 'react-bootstrap'
 import TextInput from "Components/common/TextInput"
+import SelectInput from "Components/common/SelectInput"
+import DatePickerInput from "Components/common/DatePickerInput"
+import TextareaInput from "Components/common/TextareaInput"
 
-const PopUpDataClient = (props) => {
-
-	let variable1 = "prueba curso"
-
-
-return (
-
+const Example = (props) => (
 	<div>
 		<Row className="mb12">
 			<Col xs={12}>
@@ -23,15 +20,12 @@ return (
 				<form name="formCriterios" id="formCriterios" >
 					<Row>
 						<Col sm={12} md={4}>
-							<TextInput
+							<SelectInput
 								label={Labels.CallClient.numberClient}
 								placeholder={Labels.CallClient.numberClient}
 								name={'numberClient'}
-								value={variable1}
+								options={[{id:1, valor: 'uno'},{id:2, valor: 'dos'},{id:3, valor: 'tres'}]}
 								required
-								disabled
-								num
-								maxLength={100}
 								error={props.validate || false} />
 						</Col>
 						<Col sm={12} md={4}>
@@ -39,7 +33,6 @@ return (
 								label={Labels.CallClient.nameOne}
 								placeholder={Labels.CallClient.nameOne}
 								name={'nameOne'}
-								value={props.data.nombre}
 								required
 								disabled
 								num
@@ -47,50 +40,20 @@ return (
 								error={props.validate || false} />
 						</Col>
 						<Col sm={12} md={4}>
-							<TextInput
+							<DatePickerInput
 								label={Labels.CallClient.nameTwo}
 								placeholder={Labels.CallClient.nameTwo}
 								name={'nameTwo'}
-								value={''}
 								required
-								disabled
-								num
-								maxLength={100}
 								error={props.validate || false} />
 						</Col>
-						<Col sm={12} md={4}>
-							<TextInput
+						<Col sm={12} md={12}>
+							<TextareaInput
 								label={Labels.CallClient.lastNameOne}
 								placeholder={Labels.CallClient.lastNameOne}
 								name={'lastNameOne'}
-								value={props.data.apellidoPaterno}
 								required
-								disabled
-								num
-								maxLength={100}
-								error={props.validate || false} />
-						</Col>
-						<Col sm={12} md={4}>
-							<TextInput
-								label={Labels.CallClient.lastNameTwo}
-								placeholder={Labels.CallClient.lastNameTwo}
-								name={'lastNameTwo'}
-								value={props.data.apellidoMaterno}
-								required
-								disabled
-								num
-								maxLength={100}
-								error={props.validate || false} />
-						</Col>
-						<Col sm={12} md={4}>
-							<TextInput
-								label={Labels.CallClient.phone}
-								placeholder={Labels.CallClient.phone}
-								name={'phone'}
-								value={props.data.Contacto ? props.data.Contacto.ListaTelefonos.Telefono.codigoArea + props.data.Contacto.ListaTelefonos.Telefono.numeroTelefonico: ''}
-								required
-								disabled
-								num
+								row={20}
 								maxLength={100}
 								error={props.validate || false} />
 						</Col>
@@ -100,7 +63,5 @@ return (
 		</Row>
 	</div>
 )
-}
 
-export default PopUpDataClient
-
+export default Example

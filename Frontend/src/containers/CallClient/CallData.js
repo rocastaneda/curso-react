@@ -6,6 +6,7 @@ import React, { Component } from 'react'
 import {closeModal, createModal} from 'Modules/Modal'
 
 import PopUpDataClient from 'Components/callClient/PopUpDataClient'
+import Example from 'Components/callClient/Example'
 
 import { getDataClient, clearDataClient } from "Modules/DataClient"
 
@@ -29,12 +30,12 @@ class CallData extends Component {
 	}
 
 	componentWillMount() {
-		this.props.clearDataClient()
+		/*this.props.clearDataClient()
 		this.props.getDataClient({campaniaId: 10}).then( response => {
 
 			let data = response.Cliente
 			let modalObj = {
-				body: <PopUpDataClient
+				body: <Example
 					data={data}
 				/>,
 				closeButton: true,
@@ -61,13 +62,14 @@ class CallData extends Component {
 				Estatus : '',
 				ClienteId : data.idCliente
 			}}, () => this.props.createModal(modalObj) )
-		})
+		})*/
 	}
 
 	render() {
 		return(
 			<div className="container">
 				<h1>Home</h1>
+				<Example />
 			</div>
 		)
 	}
