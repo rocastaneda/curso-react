@@ -41,15 +41,15 @@ class FileInput extends Component {
 				<label className="control-label" htmlFor={this.props.name} style={{width: '100%', marginBottom: 0, fontWeight: 'normal'}}>
 					{this.props.label}
 					<div className="btn-toolbar pull-right">
-						<Button 
-							value={this.props.value} 
+						<Button
+							value={this.props.value}
 							bsSize="xsmall"
 							disabled={this.props.value ? false : true}
 							onClick={this.props.onClickView}>
 								Ver <i className="fa fa-eye" />
 						</Button>
 						&nbsp;
-						<span className="btn btn-default btn-file" disabled={this.props.disabled} bsSize="xsmall"> 
+						<span className="btn btn-default btn-file" disabled={this.props.disabled} bsSize="xsmall">
 							<input
 								style={{display: 'none'}}
 								autoFocus={this.props.autoFocus}
